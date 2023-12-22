@@ -83,10 +83,10 @@ jobs:
                          --compare-to=/tmp/infracost-base.json \
                          --out-file=/tmp/infracost.json
 
-      - name: Download infracost file
-        uses: actions/download-artifact@v3
-        with:
-          name: infracost.json
+      # - name: Download infracost file
+      #   uses: actions/download-artifact@v3
+      #   with:
+      #     name: infracost.json
 
       - name: Terraform Apply
         id: apply
